@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FreshBite - fresh food, simple ordering.">
+  <title>FreshBite | Fresh Food, Simple Ordering</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>[hidden]{display:none!important}.cart-actions{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:24px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:var(--shadow)}.cart-actions span{color:var(--muted);font-size:.85rem;font-weight:800}.cart-actions-buttons{display:flex;gap:8px}.cart-actions .button{min-height:38px;padding:0 14px;font-size:.78rem}@media (max-width: 800px) { .food-grid { grid-template-columns: 1fr; } .food-card { display: grid; grid-template-columns: 108px minmax(0, 1fr); } .food-image { height: 100%; min-height: 154px; } .food-content { padding: 12px; } .food-name { font-size: .9rem; } .food-price { font-size: .82rem; } .food-description { min-height: 0; margin: 6px 0 10px; font-size: .76rem; } .add-button { padding: 7px 9px; font-size: .72rem; } .cart-actions{align-items:stretch;flex-direction:column}.cart-actions-buttons{width:100%}.cart-actions .button{flex:1} }</style>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="index.html"><span class="brand-mark">✦</span>FreshBite</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="active" href="index.html">Menu</a>
+        <a class="cart-link" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="menu-section" id="menu">
+      <div class="shell">
+        <div class="section-heading"><h2>What are you craving?</h2><p>Small-batch favorites, big on flavor. There is something for every kind of hungry.</p></div>
+        <div class="filters" id="filters" aria-label="Food categories"></div>
+        <div class="food-grid" id="foodGrid"></div>
+        <div class="cart-actions" id="cartActions" hidden><span id="cartActionText">Your cart is ready</span><div class="cart-actions-buttons"><a class="button secondary" href="cart.html">View cart</a><a class="button" href="checkout.html">Checkout</a></div></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="shell">FreshBite · Fresh food, simple ordering</div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
