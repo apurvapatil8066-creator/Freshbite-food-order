@@ -9,7 +9,7 @@ The project allows users to explore food items, add products to their cart, adju
 🔗 **Live Website:** https://freshbite-food-order.netlify.app/
 
 ---
-
+ 
 ## ✨ Features
 
 * 🏠 Responsive food ordering homepage
